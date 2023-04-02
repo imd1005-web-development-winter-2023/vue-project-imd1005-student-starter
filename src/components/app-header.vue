@@ -56,9 +56,9 @@ header h2 {
   font-size: 2.2rem;
 }
 
-header nav {
-  /* margin-left: auto; */
-}
+/* header nav {
+  margin-left: auto;
+} */
 
 @media screen and (min-width: 550px) {
   header nav {
