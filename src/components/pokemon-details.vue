@@ -30,7 +30,7 @@ const imageAdaptedSource = computed(() => {
   <div>
     <div class="pd">
       <div class="image">
-        <img :src="pokemon.image.hires" :alt="pokemon.name.english" />
+        <img :src="imageAdaptedSource" :alt="pokemon.name.english" />
       </div>
       <div class="content">
         <h1>
