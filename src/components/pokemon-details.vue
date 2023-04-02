@@ -1,13 +1,11 @@
 <script setup>
-import { watch, ref } from 'vue';
+import { watch, ref, computed } from 'vue';
 import { usePokemons } from '@/composables/pokemons';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
 const { pokemons } = usePokemons();
 const pokemon = ref();
-
-console.log('Hello from setup', route.params.pokemonName);
 
 // fetch the user information when params change
 watch(
@@ -19,6 +17,13 @@ watch(
   },
   { immediate: true },
 );
+
+// Because GitHub Pages adds a /REPO/ folder
+// we need to adjust or adapt the file path
+// to account for the base repo name
+const imageAdaptedSource = computed(() => {
+  return import.meta.env.BASE_URL + pokemon.value.image.hires;
+});
 </script>
 
 <template>

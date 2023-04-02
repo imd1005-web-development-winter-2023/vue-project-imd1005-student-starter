@@ -9,8 +9,9 @@ const props = defineProps({
   },
 });
 
-console.log(import.meta.env.BASE_URL);
-
+// Because GitHub Pages adds a /REPO/ folder
+// we need to adjust or adapt the file path
+// to account for the base repo name
 const imageAdaptedSource = computed(() => {
   return import.meta.env.BASE_URL + props.pokemon.image.thumbnail;
 });
