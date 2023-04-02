@@ -72,7 +72,7 @@ const imageAdaptedSource = computed(() => {
 }
 
 .pokemon h2 {
-  margin: 0px 0px 0.5rem 0px;
+  margin: 0px 0px 1rem 0px;
   color: var(--colour-darkblue);
 }
 
@@ -91,7 +91,7 @@ const imageAdaptedSource = computed(() => {
 
 .pokemon .types {
   list-style-type: none;
-  margin: 0px 0px 0.8rem 0px;
+  margin: 0px 0px 1rem 0px;
   padding: 0px;
   width: 50px;
 
@@ -113,6 +113,7 @@ const imageAdaptedSource = computed(() => {
 }
 
 .pokemon .link {
+  font-size: 1.2rem;
   color: var(--colour-darkblue);
   display: inline-flex;
   align-items: center;
