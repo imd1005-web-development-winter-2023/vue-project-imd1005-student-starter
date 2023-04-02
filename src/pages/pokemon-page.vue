@@ -25,6 +25,7 @@ import pokemonDetails from '@/components/pokemon-details.vue';
 
 <style scoped>
 .link {
+  font-size: 1.3rem;
   margin: 2rem 0px 2rem 0px;
 
   color: var(--colour-darkblue);
