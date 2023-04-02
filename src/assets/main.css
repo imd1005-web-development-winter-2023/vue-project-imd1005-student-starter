@@ -1,0 +1,65 @@
+@import './reset.css';
+
+/*
+ VARIABLES
+*/
+:root {
+  /* Core colours */
+  /* https://www.onlinepalette.com/pokemon/ */
+
+  /* Primary colors */
+  --colour-darkblue: #0a285f;
+  --colour-blue: #004b8f;
+  --colour-lightblue: #0075be;
+  --colour-lighterblue: #3385ff;
+
+  --colour-darkyellow: #d5a100;
+  --colour-lightyellow: #ffcc00;
+  --colour-yellow: #e6bc2f;
+
+  --colour-darkorange: #d94c09;
+  --colour-orange: #ee6b2f;
+  --colour-brightorange: #ff8c53;
+
+  --colour-red: #fb1b1b;
+  --colour-darkgreen: #398a46;
+  --colour-green: #4dad5b;
+  --colour-lightgreen: #6ee680;
+
+  /* Secondary colors */
+  --color-secondary: #1b1b1b;
+  --color-secondary-dark: #0d0d0d;
+  --color-secondary-light: #333333;
+
+  /* Neutral colors */
+  --colour-cello: #1d3557;
+  --colour-lightgray: #f5f5f5;
+  --colour-lightergray: #f8f8f8;
+  --colour-gray: #dfdfdf;
+  --colour-white: #ffffff;
+  --colour-black: #000000;
+}
+
+/*
+  PAGE / BODY
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--body-default-colour);
+  background-color: var(--colour-lightergray);
+}
+
+/*
+  Screen reader text utility class
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
