@@ -28,13 +28,20 @@
 header {
   background-color: var(--colour-lightergray);
   color: var(--colour-darkblue);
-  margin: 0 0 1rem 0;
-  padding: 2.5rem;
+  margin: 0.5rem 0 1rem 0;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
 
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+@media screen and (min-width: 550px) {
+  header {
+    flex-direction: row;
+    padding: 2.5rem;
+  }
 }
 
 header .logo {
@@ -50,7 +57,13 @@ header h2 {
 }
 
 header nav {
-  margin-left: auto;
+  /* margin-left: auto; */
+}
+
+@media screen and (min-width: 550px) {
+  header nav {
+    margin-left: auto;
+  }
 }
 
 header nav ul {
