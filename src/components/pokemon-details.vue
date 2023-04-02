@@ -56,8 +56,8 @@ watch(
 </template>
 
 <style scoped>
-.pd {
-}
+/* .pd {
+} */
 
 .pd .image {
   width: 100%;
