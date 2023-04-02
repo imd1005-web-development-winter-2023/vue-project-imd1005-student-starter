@@ -859,9 +859,9 @@
       "gender": "50:50"
     },
     "image": {
-      "sprite": "/images/pokedex/sprites/024.png",
-      "thumbnail": "/images/pokedex/thumbnails/024.png",
-      "hires": "/images/pokedex/hires/024.png"
+      "sprite": "/src/assets/images/pokedex/sprites/024.png",
+      "thumbnail": "/src/assets/images/pokedex/thumbnails/024.png",
+      "hires": "/src/assets/images/pokedex/hires/024.png"
     }
   },
   {
