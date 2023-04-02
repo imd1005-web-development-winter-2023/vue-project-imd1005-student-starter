@@ -1,4 +1,5 @@
 <script setup>
+import { computed } from 'vue';
 import { RouterLink } from 'vue-router';
 
 const props = defineProps({
@@ -6,6 +7,12 @@ const props = defineProps({
     type: Object,
     default: null,
   },
+});
+
+console.log(import.meta.env.BASE_URL);
+
+const imageAdaptedSource = computed(() => {
+  return import.meta.env.BASE_URL + props.pokemon.image.thumbnail;
 });
 </script>
 
@@ -39,7 +46,7 @@ const props = defineProps({
         </svg>
       </RouterLink>
     </div>
-    <img class="thumb" :src="pokemon.image.thumbnail" alt="" />
+    <img class="thumb" :src="imageAdaptedSource" alt="" />
   </li>
 </template>
 
