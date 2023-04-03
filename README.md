@@ -2,6 +2,10 @@
 
 This project is a small Vue 3 app, demonstrating how to use the Vue router, composable functions, loading JSON data, and dealing with GitHub's base repo folder addition when using the GitHub pages service.
 
+## App preview
+
+https://imd1005-web-development-winter-2023.github.io/vue-project-imd1005-student-starter/about
+
 ## Recommended IDE
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
@@ -32,13 +36,13 @@ This project is a small Vue 3 app, demonstrating how to use the Vue router, comp
 
 Use GitHub to download the repository files so that you have all of the files locally.
 
-## Step 2: Install Node packages
+### Step 2: Install Node packages
 
 ```sh
 npm install
 ```
 
-## Step 3: Configure your `base` output folder in `vite.config.js`
+### Step 3: Configure your `base` output folder in `vite.config.js`
 
 If you are using GitHub pages for hosting, you need to configure the base folder path so that your app works on Github pages web server.
 
@@ -47,13 +51,19 @@ To do this we modify our `vite.config.js` file and set the `base` parameter to t
 So, the following:
 
 ```js
+export default defineConfig({
   base: '/vue-project-imd1005-student-starter',
+  ...
+});
 ```
 
 Must be changed to the name of your group project repository
 
 ```js
+export default defineConfig({
   base: '/name-of-group-project-repository',
+  ...
+});
 ```
 
 In the future, if you want to use this boilerplate with a web server other than GitHub pages, you can remove the `base` parameter altogether.
@@ -76,6 +86,21 @@ You can now add all of the files to your Group Repository either using the file 
 
 Since the project has a special `.github` folder with a pre-configured GitHub action, you don't need to do anything else to configure the Build and Deploy steps. GitHub will automatically set everything up for you.
 
+## Pokemon Data
+
 ## Vite Customize configuration
 
+In the future, you may want to configure the Vite tool for whatever reason. The following link provides some great documentation on how to do just that.
+
 See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## References
+
+- [Pokemon Data](https://github.com/Purukitto/pokemon-data.json)
+- [Vue cheat sheet](https://www.vuemastery.com/vue-cheat-sheet/)
+- [Vue docs](https://vuejs.org/)
+- [Vite docs](https://vitejs.dev/)
+- [Vue Router docs](https://router.vuejs.org/)
+- [Vue Composable functions](https://www.vuemastery.com/courses/coding-better-composables/what-is-a-composable/)
+- [UX Inspiration: iOS Pokedex App - Free Sketch Resource](https://sketchelements.com/ios-pokedex-app/)
+- [UX Inspiration: Dribble Pokedex](https://dribbble.com/shots/14500564-Pokedex)
