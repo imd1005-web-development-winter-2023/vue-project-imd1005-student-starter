@@ -4,7 +4,7 @@ This project is a small Vue 3 app, demonstrating how to use the Vue router, comp
 
 ## App preview
 
-https://imd1005-web-development-winter-2023.github.io/vue-project-imd1005-student-starter/about
+https://imd1005-web-development-winter-2023.github.io/vue-project-imd1005-student-starter/
 
 ## Recommended IDE
 
