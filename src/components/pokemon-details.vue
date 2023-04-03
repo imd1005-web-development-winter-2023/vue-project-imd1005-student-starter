@@ -7,7 +7,8 @@ const route = useRoute();
 const { pokemons } = usePokemons();
 const pokemon = ref();
 
-// fetch the user information when params change
+// fetch the pokemon information when the
+// pokemonName params changes
 watch(
   () => route.params.pokemonName,
   (incomingPokemonName) => {
@@ -22,12 +23,19 @@ watch(
 // we need to adjust or adapt the file path
 // to account for the base repo name
 const imageAdaptedSource = computed(() => {
-  return import.meta.env.BASE_URL + pokemon.value.image.hires;
+  if (pokemon.value !== undefined) {
+    return import.meta.env.BASE_URL + pokemon.value.image.hires;
+  }
+  return null;
 });
 </script>
 
 <template>
-  <div>
+  <!--
+    Use v-if to only render the pokemon details when
+    a pokemon with the matching name is found
+  -->
+  <div v-if="pokemon">
     <div class="pd">
       <div class="image">
         <img :src="imageAdaptedSource" :alt="pokemon.name.english" />
@@ -55,6 +63,19 @@ const imageAdaptedSource = computed(() => {
             <p>{{ pokemon.base.HP }}</p>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <!--
+    This template code is displayed
+    when no pokemon with a matching name is found
+    So if a user puts /not-a-pokemon-name in the
+    address bar it will show this code
+  -->
+  <div v-else>
+    <div class="pd">
+      <div class="content">
+        <h1>Pokemon not found!</h1>
       </div>
     </div>
   </div>
