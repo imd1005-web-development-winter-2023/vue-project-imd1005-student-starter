@@ -2,7 +2,7 @@
 
 This project is a small Vue 3 app, demonstrating how to use the Vue router, composable functions, loading JSON data, and dealing with GitHub's base repo folder addition when using the GitHub pages service.
 
-## App preview
+## Preview
 
 https://imd1005-web-development-winter-2023.github.io/vue-project-imd1005-student-starter/
 
@@ -87,6 +87,12 @@ You can now add all of the files to your Group Repository either using the file 
 Since the project has a special `.github` folder with a pre-configured GitHub action, you don't need to do anything else to configure the Build and Deploy steps. GitHub will automatically set everything up for you.
 
 ## Pokemon Data
+
+![Pokemon data flow](/public/images/data-transfer/data-transfer.png)
+
+All of our data for the Pokemon is stored in one place in a JSON file inside our "data" folder.
+
+We use a Vue Composable function called "usePokemons()" as a way to share this data with many different compoments in our application.
 
 ## Vite Customize configuration
 
