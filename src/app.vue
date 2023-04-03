@@ -16,12 +16,12 @@ main {
   margin: 0 auto 4rem auto;
   max-width: 700px;
   width: minmax(0, 100%);
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 @media screen and (min-width: 700px) {
   main {
-    padding: 0 1.5rem 0 1.5rem;
+    padding: 0 1.5rem 1rem 1.5rem;
   }
 }
 /*
